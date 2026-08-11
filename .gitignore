@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+era5-env/
+venv/
+
+.DS_Store
+
+*.nc
+*.parquet
+*.csv
+*.pkl
