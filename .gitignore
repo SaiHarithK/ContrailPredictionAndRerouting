@@ -3,7 +3,7 @@ __pycache__/
 
 era5-env/
 venv/
-
+opensky/
 .DS_Store
 
 *.nc

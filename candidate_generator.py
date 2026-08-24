@@ -102,6 +102,20 @@ def generate_candidates(
             "lat": current_lat + OFFSET * right_y,
             "lon": current_lon + OFFSET * right_x,
             "pressure": current_alt - 25
+        },
+
+        {
+            "name": "Left + Descend",
+            "lat": current_lat + OFFSET * left_y,
+            "lon": current_lon + OFFSET * left_x,
+            "pressure": current_alt + 25
+        },
+
+        {
+            "name": "Right + Descend",
+            "lat": current_lat + OFFSET * right_y,
+            "lon": current_lon + OFFSET * right_x,
+            "pressure": current_alt + 25
         }
 
     ]

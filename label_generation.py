@@ -1,12 +1,7 @@
    
 
 import numpy as np
-import pandas as pd
-
-
-                                                              
-                    
-                                                              
+import pandas as pd                                               
 
 def _sigmoid(x: np.ndarray, center: float, scale: float) -> np.ndarray:
            
@@ -17,12 +12,8 @@ def _linear_clip(x: np.ndarray, x_min: float, x_max: float) -> np.ndarray:
            
     score = (x - x_min) / (x_max - x_min)
     return np.clip(score, 0.0, 1.0)
-
-
-                                                              
+                                                            
                                           
-                                                              
-
 def formation_score(delta_t: np.ndarray,
                     center: float = 0.0,
                     scale: float = 1.5) -> np.ndarray:
@@ -60,11 +51,7 @@ def issr_score(issr_depth: np.ndarray,
                max_depth: float = 4.0) -> np.ndarray:
            
     return _linear_clip(issr_depth, min_depth, max_depth)
-
-
-                                                              
-                                         
-                                                              
+                                                          
 
 def compute_p_contrail(
         formation:   np.ndarray,
@@ -110,8 +97,8 @@ def generate_labels(
         threshold: float = 0.5,
         formation_center: float = 0.0,
         formation_scale: float = 1.5,
-        persistence_center: float = 100.0,
-        persistence_scale: float = 10.0,
+        persistence_center: float = 80.0,
+        persistence_scale: float = 20.0,
         stochastic_labels: bool = False
 ) -> pd.DataFrame:
 

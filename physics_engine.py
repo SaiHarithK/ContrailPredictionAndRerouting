@@ -64,7 +64,7 @@ def calculate_tcritical(pressure_hpa):
     """
 
     return 233 - 0.0065 * (250 - pressure_hpa)
-
+    
 
 # ==========================================================
 # Delta T
