@@ -5,7 +5,7 @@ era5-env/
 venv/
 opensky/
 .DS_Store
-
+opensky/credentials.json
 *.nc
 *.parquet
 *.csv
